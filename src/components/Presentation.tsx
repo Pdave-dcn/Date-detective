@@ -12,7 +12,7 @@ const Presentation = () => {
           the month aligned with a specific day of the week, within a given
           month.
         </p>
-        <p className="hidden lg:flex justify-center items-center text-seasalt font-normal p-5 lg:p-3 rounded-lg bg-indigo //text-center h-full">
+        <p className="hidden lg:flex justify-center items-center text-seasalt font-normal p-5 lg:p-3 rounded-lg bg-indigo h-full">
           Date Detective helps you find the last and next time a specific day of
           the month (e.g., the 15th) aligned with a specific day of the week
           (e.g., Monday), within a given month. <br />
