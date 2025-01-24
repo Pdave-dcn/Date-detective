@@ -106,7 +106,7 @@ const InputFields = ({
         </div>
         <button
           type="submit"
-          className="bg-platinum flex justify-center items-center h-14 sm:h-20 lg:h-14 mt-8 sm:mt-14 lg:mt-12 lg:mb-10 rounded-lg active:border-2 active:opacity-75 lg:hover:shadow-lg lg:hover:shadow-electricViolet/20 submit__btn"
+          className="bg-platinum flex justify-center items-center h-14 sm:h-20 lg:h-14 mt-8 sm:mt-14 lg:mt-12 lg:mb-10 rounded-lg shadow-md shadow-electricViolet/20 lg:shadow-none active:opacity-75 lg:hover:shadow-lg lg:hover:shadow-electricViolet/20 submit__btn"
         >
           <img
             src="magnifying-glass.svg"

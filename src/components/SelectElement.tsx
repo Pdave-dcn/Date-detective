@@ -29,7 +29,7 @@ const SelectElement = ({
         </label>
         <select
           id={id}
-          className={`${customStyle} p-2 sm:p-4 lg:p-3 cursor-pointer bg-platinum rounded-lg outline-none lg:hover:shadow-lg lg:hover:shadow-electricViolet/20`}
+          className={`${customStyle} p-2 sm:p-4 lg:p-3 shadow-md shadow-electricViolet/20 lg:shadow-none cursor-pointer bg-platinum rounded-lg outline-none lg:hover:shadow-lg lg:hover:shadow-electricViolet/20`}
         >
           {isArrayOfObjects(array)
             ? array.map((item) => (

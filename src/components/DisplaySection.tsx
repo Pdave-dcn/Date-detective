@@ -54,7 +54,7 @@ const DisplaySection = ({
         }
       }
 
-      setIsMatch(true); // Set match only after both dates are found
+      setIsMatch(true);
     }
   }, [dayOfMonth, dayOfWeek, isValid, month]);
 
