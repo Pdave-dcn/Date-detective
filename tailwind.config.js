@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: ["shadow-md", "shadow-electricViolet/20", "lg:shadow-none"],
   theme: {
     extend: {
       fontFamily: {
