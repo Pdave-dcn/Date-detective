@@ -1,11 +1,25 @@
+import { useState, useEffect } from "react";
+
 const Presentation = () => {
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStartAnimation(true);
+    }, 900);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div className="bg-electricViolet p-4 lg:p-5 flex flex-col items-center w-full lg:flex-1 lg:h-full lg:rounded-lg">
         <img
           src="logo.png"
           alt="Logo"
-          className="w-48 sm:w-56 lg:w-60 lg:mb-5"
+          className={`w-48 sm:w-56 lg:w-60 lg:mb-5 ${
+            startAnimation ? "animate-scaleUp" : ""
+          }`}
         />
         <p className="text-seasalt text-center text-sm sm:text-base font-semibold w-[300px] sm:w-[400px] p-3 rounded-lg rounded-t-[20%] bg-indigo lg:hidden">
           Date Detective helps you find the last and next time a specific day of

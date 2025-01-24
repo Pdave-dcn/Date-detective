@@ -14,6 +14,21 @@ export default {
         seasalt: "#F8F9FA",
         heliotrope: "#BE6EF7",
       },
+      animation: {
+        fadeIn: "fadeIn 0.8s ease-in-out",
+        scaleUp: "scaleUp 0.5s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        scaleUp: {
+          "0%": { transform: "scale(0.5)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1.2)" },
+        },
+      },
     },
   },
   plugins: [],

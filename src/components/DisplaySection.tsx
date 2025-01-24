@@ -61,7 +61,7 @@ const DisplaySection = ({
   return (
     <div className="flex-1 flex bg-gradient-to-b from-seasalt from-50% to-onyx to-50% lg:bg-none lg:mb-5">
       {isMatch ? (
-        <div className="bg-onyx rounded-t-[20%] lg:rounded-lg w-full p-5 flex items-center justify-center">
+        <div className="bg-onyx rounded-t-[20%] lg:rounded-lg w-full p-5 flex items-center justify-center animate-fadeIn">
           <div className="mt-8 lg:mt-0">
             <div className="flex flex-col text-seasalt font-bold mb-5">
               <label htmlFor="last-occurrence" className="font-normal text-lg">

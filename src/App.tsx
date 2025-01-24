@@ -32,7 +32,7 @@ function App() {
   }, [tempDayOfMonth, tempWeek, tempMonth]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen animate-fadeIn">
       <div className="flex flex-col min-h-screen w-full lg:flex-row lg:min-h-0 lg:w-[1096px] bg-white lg:shadow-xl lg:rounded-lg">
         <div className="lg:flex-1 lg:bg-seasalt lg:p-5">
           <Presentation />
