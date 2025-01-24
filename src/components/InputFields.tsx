@@ -24,6 +24,7 @@ const InputFields = ({
     { id: 5, name: "Friday" },
     { id: 6, name: "Saturday" },
   ];
+
   const monthsArray = [
     { id: 0, name: "January" },
     { id: 1, name: "February" },
@@ -38,6 +39,8 @@ const InputFields = ({
     { id: 10, name: "November" },
     { id: 11, name: "December" },
   ];
+
+  const monthWith30Days = [3, 5, 8, 10];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,12 +59,15 @@ const InputFields = ({
     const selectedDayOfWeek = parseInt(dayOfWeekSelect.value, 10);
     const selectedMonth = parseInt(monthSelect.value, 10);
 
-    if (
-      isNaN(selectedDayOfMonth) ||
-      isNaN(selectedDayOfWeek) ||
-      isNaN(selectedMonth)
-    )
+    if (selectedDayOfMonth === 31 && monthWith30Days.includes(selectedMonth)) {
+      alert("The selected month has 30 days maximum!!");
       return;
+    }
+
+    if (selectedMonth === 1 && selectedDayOfMonth > 29) {
+      alert("February has 29 days maximum!!");
+      return;
+    }
 
     setTempDayOfMonth(selectedDayOfMonth);
     setTempWeek(selectedDayOfWeek);

@@ -62,7 +62,7 @@ const DisplaySection = ({
     <div className="flex-1 flex bg-gradient-to-b from-seasalt from-50% to-onyx to-50% lg:bg-none lg:mb-5">
       {isMatch ? (
         <div className="bg-onyx rounded-t-[20%] lg:rounded-lg w-full p-5 flex items-center justify-center">
-          <div className="mt-8 ml-40 sm:ml-64 lg:ml-0 lg:mt-0">
+          <div className="mt-8 lg:mt-0">
             <div className="flex flex-col text-seasalt font-bold mb-5">
               <label htmlFor="last-occurrence" className="font-normal text-lg">
                 Last Occurrence
@@ -71,11 +71,11 @@ const DisplaySection = ({
                 type="text"
                 id="last-occurrence"
                 value={lastOccurrence}
-                className="text-heliotrope bg-onyx text-3xl sm:text-5xl lg:w-60 lg:text-3xl"
+                className="text-heliotrope bg-onyx text-3xl w-64 sm:text-4xl sm:w-72 lg:text-3xl"
                 readOnly
               />
             </div>
-            <div className="h-[1px] w-[290px] sm:w-[425px] lg:w-[290px] bg-seasalt -ml-8 lg:hidden"></div>
+            <div className="h-[1px] w-[290px] sm:w-[425px] lg:w-[290px] bg-seasalt lg:hidden"></div>
             <div className="flex flex-col text-seasalt font-bold mb-5 mt-5 lg:mb-0">
               <label htmlFor="next-occurrence" className="font-normal text-lg">
                 Next Occurrence
@@ -84,7 +84,7 @@ const DisplaySection = ({
                 type="text"
                 id="next-occurrence"
                 value={nextOccurrence}
-                className="text-heliotrope bg-onyx text-3xl sm:text-5xl lg:w-60 lg:text-3xl"
+                className="text-heliotrope bg-onyx text-3xl w-64 sm:text-4xl sm:w-72 lg:text-3xl"
                 readOnly
               />
             </div>
